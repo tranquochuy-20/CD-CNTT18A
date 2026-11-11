@@ -1,4 +1,4 @@
-# BÀI 1: LÀM QUEN VỚI NODE.JS
+
 
 ## 1. Kiểm tra phiên bản Node.js và npm
 
