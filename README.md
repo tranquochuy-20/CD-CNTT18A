@@ -1,48 +1,54 @@
-# BÀI THỰC HÀNH NODE.JS
 
 **Họ và tên:** Huy Trần
 
 **Lớp:** CĐ-CNTT18A
 
-## 1. Cài đặt Node.js
+## 1. Mục tiêu
 
-Đã cài đặt Node.js trên máy tính để phục vụ việc thực hành lập trình JavaScript.
+Tạo HTTP Server bằng Node.js thuần, sử dụng module `http` có sẵn để xử lý yêu cầu từ trình duyệt và trả về trang HTML chứa thông tin sinh viên.
 
-## 2. Kiểm tra phiên bản Node.js và npm
-
-Mở Terminal trong VS Code và nhập các lệnh:
-
-```powershell
-node -v
-npm -v
-```
-
-**Kết quả:**
-
-- Node.js: `v26.13.0`
-- npm: `11.20.0`
-
-## 3. Tạo file Hello.js
-
-Đã tạo file `Hello.js` và sử dụng hàm `console.log()` để xuất thông tin ra màn hình Terminal.
-
-## 4. Cách chạy chương trình
-
-Mở Terminal tại thư mục gốc của dự án `CD-CNTT18A` và nhập lệnh:
-
-```powershell
-node "Bai 1/Hello.js"
-```
-
-## 5. Kết quả thực hiện
-
-Chương trình chạy thành công và hiển thị kết quả:
+## 2. Cấu trúc thư mục
 
 ```text
-Hello Word!
-Ho va ten: Trần Quốc Huy
-Lop: CD-CNTT18A
+bai 2/
+├── server.js
+└── README.md
 ```
+
+## 3. Cách chạy chương trình
+
+**Bước 1:** Mở Terminal trong VS Code tại thư mục `bai 2`.
+
+**Bước 2:** Chạy lệnh sau để khởi động HTTP Server:
+
+```powershell
+node server.js
+```
+
+**Bước 3:** Khi chạy thành công, Terminal hiển thị:
+
+```text
+Server đang chạy tại http://localhost:3000
+```
+
+**Bước 4:** Mở trình duyệt Google Chrome và truy cập địa chỉ:
+
+```text
+http://localhost:3000
+```
+
+## 4. Kết quả thực hiện
+
+Trang HTML hiển thị thông tin sinh viên:
+
+- Họ và tên: Huy Trần
+- Lớp: CĐ-CNTT18A
+
+Server sử dụng cổng 3000 và trả về nội dung HTML khi người dùng truy cập bằng trình duyệt.
+
+## 5. Kết luận
+
+Đã tạo và chạy thành công HTTP Server bằng Node.js thuần. Có thể truy cập trang web thông qua địa chỉ `http://localhost:3000`.
 
 ---
 
